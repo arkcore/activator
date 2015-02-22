@@ -138,7 +138,7 @@ var quote = function (regex) {
         return function (rcpt, msgid, content) {
             var url,
                 ret,
-                re = new RegExp('http:\\/\\/\\S*' + path.replace(/\//g, '\\/') + '\\?code=([^\\s\\&]+)\\&email=(\\S+)\\&user=([^\\s\\&"]+)');
+                re = new RegExp('http:\\/\\/\\S*' + path.replace(/\//g, '\\/') + '\\?code=([^\\s\\&]+)\\&email=(\\S+)\\&id=([^\\s\\&"]+)');
 
             rcpt.should.eql(email);
             // check for the correct Subject in the email

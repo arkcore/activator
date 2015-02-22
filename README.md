@@ -15,6 +15,7 @@ var express = require('express'),
 // password_reset_time: Number
 // activation_code: String
 // password: String
+// validated: Boolean
 //
 // Obviously password hashing is not handled here, either pre-process it yourself,
 // or use mongoose middleware
@@ -103,6 +104,7 @@ User must have these fields available: `password_reset_code`, `password_reset_ti
 * `pathResetPassword`: {String} - defaults to `/api/1/users/forgot`
 * `password_reset_subject`: {String} - subject for password reset emails
 * `activation_subject`: {String} - subject for account activation emails
+* `validatedProperty`: {String} - use this to mark account as validated
 
 
 ## Testing
