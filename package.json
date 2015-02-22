@@ -1,7 +1,7 @@
 {
   "name": "express-user-activator",
   "description": "simple user activation and password reset for express.js",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "url": "http://github.com/arkcore/activator",
   "author": "Vitaly Aminev <vitaly@ark.com>",
   "contributors": [
