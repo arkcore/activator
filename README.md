@@ -56,12 +56,12 @@ activator.init(config);
 
 
 // handling activation
-var activateRoutes = express.router(config.pathActivate)
+var activateRoutes = express.Router(config.pathActivate)
   .get(activator.createActivate)
   .post(activator.completeActivate);
 
 // handling password reset
-var passwordResetRoutes = express.router(config.pathResetPassword)
+var passwordResetRoutes = express.Router(config.pathResetPassword)
   .get(activator.createPasswordReset)
   .post(activator.completePasswordReset);
 
